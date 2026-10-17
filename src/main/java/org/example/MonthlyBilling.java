@@ -18,7 +18,7 @@ public class MonthlyBilling {
         if (monthlyConsumption == null || monthlyConsumption < 0) {
             throw new IllegalArgumentException("Monthly payment must be greater than 0");
         }
-        Double amountToPay = 0.0;
+        double amountToPay = 0.0;
         if (monthlyConsumption <= 100) {
             amountToPay = 0.10 * monthlyConsumption;
         }
